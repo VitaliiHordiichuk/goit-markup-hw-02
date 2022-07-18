@@ -16,6 +16,7 @@ body {
        
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
+    font-size: 14px;
 }
 .logo{
     color: var(--logo-main);
@@ -33,31 +34,30 @@ body {
 .logo-footer{
     color: var(--logo-footer);
 }
-.logo :hover{
-    color :var(--accent-color);
-}
-.logo :focus{
-    color: var(--accent-color);
-}
 .list{
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
 /* header */
+
 .site-nave .link{
 color:var(--prinary-text-color);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 .site-nave .link:hover, 
 .site-nave .link:focus{
-    color:var(--accent-color);
+    color: var(--accent-color);
+}
+.current{
+    color: var(--accent-color);
 }
 .contacts .contact {
     color:var(--description-text-color);
 font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -73,7 +73,6 @@ font-weight: 500;
 }
 .hero-title{
     color: var(--white-text-color);
-    ont-style: normal;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -93,16 +92,13 @@ font-weight: 500;
 .benefits-description{
     color:var(--description-text-color);
 }
-.benefits-list{
+.benefits-description{
+    line-height: 1.71;
+}
+.benefits-title{
     font-weight: 700;
-        font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
-}
-.benefits-list{
-font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
 }
 
 /* чем мы занимаемся */
@@ -110,7 +106,6 @@ font-weight: 400;
     background-color: #F5F4FA;
 }
 .section-title{
-    font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
@@ -120,13 +115,12 @@ font-weight: 400;
     background-color: #F5F4FA;
 }
 
-.team-person{
+.team-name{
     font-weight: 500;
         font-size: 16px;
         line-height: 1.9;
 }
 .team-description{
-    font-weight: 400;
         font-size: 16px;
         line-height: 1.9;
 }
@@ -142,13 +136,14 @@ font-weight: 400;
 .address .contact{
     color: var(--address-color);
 }
-.address-list .main:hover,
-.address-list .main:focus{
-color: var(--accent-color);
-}
+
 .address-list .contact:hover,
 .address-list .contact:focus {
     color: var(--accent-color);
+}
+.address{
+    font-style: normal;
+    line-height: 1.71;
 }
 /* Портфолио */
 .main-portfolio{
@@ -166,7 +161,6 @@ color: var(--accent-color);
 }
 .portfolio .description{
     color: var(--description-text-color);
-    font-weight: 400;
         font-size: 16px;
         line-height: 1.88;
 }
@@ -176,7 +170,7 @@ background-color: var(--accent-color);
 color: var(--white-text-color);
 font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     text-align: center;
 }
 .button-filter:focus{
@@ -184,7 +178,7 @@ font-weight: 500;
 color: var(--white-text-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;
+    line-height: 1.63;
     text-align: center;
 }
 
@@ -192,8 +186,16 @@ color: var(--white-text-color);
     cursor: pointer;
     font-weight: 500;
         font-size: 16px;
-        line-height: 1.62;
+        line-height: 1.63;
     text-align: center;
+}
+.active{
+    background-color: var(--accent-color);
+        color: var(--white-text-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        text-align: center;
 }
 
 
